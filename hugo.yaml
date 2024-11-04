@@ -37,3 +37,7 @@ menu:
       url: "https://github.com/itdoginfo/podkop"
       params:
         icon: github
+
+services:
+  googleAnalytics:
+    ID: G-L8FLJF5S5R
