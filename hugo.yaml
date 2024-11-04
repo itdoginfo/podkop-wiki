@@ -1,0 +1,39 @@
+baseURL: https://podkop.net/
+languageCode: ru-ru
+title: Podkop wiki
+
+module:
+  imports:
+    - path: github.com/imfing/hextra
+
+params:
+  navbar:
+    displayTitle: true
+    displayLogo: true
+    logo:
+      path: logo-black.svg
+      dark: logo-white.svg
+      link: /
+      width: 30
+      height: 30
+  editURL:
+    enable: true
+    base: "https://github.com/itdoginfo/podkop-wiki/edit/main"
+  theme:
+    default: system
+    displayToggle: true
+
+menu:
+  main:
+    - name: Документация
+      pageRef: /docs
+      weight: 1
+    - name: Поиск
+      weight: 4
+      params:
+        type: search
+    - name: GitHub
+      weight: 5
+      url: "https://github.com/itdoginfo/podkop"
+      params:
+        icon: github
