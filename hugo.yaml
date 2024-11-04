@@ -18,7 +18,7 @@ params:
       height: 30
   editURL:
     enable: true
-    base: "https://github.com/itdoginfo/podkop-wiki/edit/main"
+    base: "https://github.com/itdoginfo/podkop-wiki/edit/main/content/"
   theme:
     default: system
     displayToggle: true
