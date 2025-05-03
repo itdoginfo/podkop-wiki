@@ -1,6 +1,7 @@
 ---
 title: 'Установка'
 weight: 1
+toc: true
 ---
 
 Пакет собирается автоматически из исходного кода. Готовые пакеты находятся в [Releases](https://github.com/itdoginfo/podkop/releases).

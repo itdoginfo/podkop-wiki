@@ -1,6 +1,7 @@
 ---
 title: 'Несколько маршрутов (секции)'
 weight: 6
+toc: true
 ---
 
 В podkop можно направлять разный трафик в разные outbound (VLESS, WG, AWG, etc). Например список Geoblock вы можете послать в ваш VLESS-сервер, расположенный в Европе, Youtube к WG-серверу в РФ, а инструменты Google AI к Shadowsocks в США.

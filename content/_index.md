@@ -12,4 +12,4 @@ GitHub: https://github.com/itdoginfo/podkop
 
 TG-группа: https://t.me/itdogchat/81758
 
-[Оглавление](/docs)
+[Документация](/docs)
