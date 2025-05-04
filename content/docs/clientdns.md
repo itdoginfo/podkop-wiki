@@ -41,7 +41,31 @@ DoH нет на уровне систем iOS, MacOS и Linux. В Windows 11 DoH
 ![Android PrivateDNS](clientdns-android.jpg)
 
 # Windows
-DoH и интерфейсы
+В Windows 11 DoH на уровне системы можно включить только специально в режиме ручной настройки DNS. Если вы это не трогали, то скорее всего, он у вас выключен. Это легко проверить.
+
+Для кабеля и Wi-Fi он включается и отключается в свойствах подключения.
+
+### Ethernet (кабель)
+**Сеть и Интернет | Network & internet** - **Ethernet**
+
+Опция **Назначение DNS-сервера | DNS server assignment** должна стоять в режиме **Автоматически | Automatic (DHCP)**
+
+![Winodows Ethernet](windows-doh-ethernet.png)
+
+### Wi-Fi
+**Сеть и Интернет | Network & internet** - **Wi-Fi**
+
+Выбираете свойства вашего подключения
+
+Опция **Назначение DNS-сервера | DNS server assignment** должна стоять в режиме **Автоматически | Automatic (DHCP)**
+
+![Winodows Wi-Fi](windows-doh-wifi.png)
+
+---
+
+Проверьте, что в информации о подключении в пункте **IPv4 DNS servers** указан ваш роутер.
+
+![Winodows interface](windows-interface.png)
 
 # Другие ОС
 Необходимо, чтобы на интерфейсе устройства был настроен роутер в качестве DNS-сервера.
