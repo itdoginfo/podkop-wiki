@@ -32,12 +32,10 @@ config extra 'wg'
 - News
 - Anime
 - Youtube
-- Discord
 - Meta
 - Twitter(X)
 - HDRezka
 - Tik-Tok
-- Cloudfalre
 
 Подсписки Meta, Twitter, Cloudflare и Discord содержат так же подсети указанных сервисов, которые по-умолчанию отсутствуют в Russia inside.
 Подсети необходимы если вам нужны рабочие голосовые чаты в Discord или какой-то из вышеназванных трех сервисов работает плохо, что-то не загружается или тормозит.
@@ -48,6 +46,10 @@ config extra 'wg'
 - Discord
 - Telegram
 - Cloudflare
+- Google AI
+- Google Play
+- Hetzner ASN
+- OVH ASN
 
 Вместе нельзя выбрать и использовать:
 - Russia inside
