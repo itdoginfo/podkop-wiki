@@ -1,6 +1,6 @@
 ---
 title: 'Wireguard'
-weight: 5
+weight: 20
 toc: true
 ---
 

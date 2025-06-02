@@ -3,6 +3,12 @@ title: 'Туннели'
 weight: 5
 ---
 
-Добавить про настройку wg, awg, oc, ovpn. Каждая технология - отдельная страница.
+Инструкции, как настраивать VPN и туннели для использования в Podkop.
 
-В первую очередь про многострадальный awg.
+[AmneziaWG](/docs/tunnels//awg_settings)
+
+[Wireguard](/docs/tunnels//wg_settings)
+
+[OpenVPN](/docs/tunnels//ovpn_settings)
+
+[OpenConnect](/docs/tunnels//oc_settings)

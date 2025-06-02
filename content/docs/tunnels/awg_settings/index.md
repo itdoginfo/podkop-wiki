@@ -1,6 +1,6 @@
 ---
 title: 'AmneziaWG'
-weight: 5
+weight: 10
 toc: true
 ---
 
