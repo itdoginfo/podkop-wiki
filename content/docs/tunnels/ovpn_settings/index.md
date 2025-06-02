@@ -100,7 +100,7 @@ Mon Jun  2 16:40:47 2025 daemon.notice openvpn(client)[28313]: Exiting due to fa
 Отправляем наш конфиг на роутер удобным вам способом.
 К примеру, используя scp, команда будет выглядеть так:
 ```
-scp -O client.ovpn root@192.168.1.1:/etc/openvpn/client.conf
+scp client.ovpn root@192.168.1.1:/etc/openvpn/client.conf
 ```
 
 После чего запускаем OpenVPN:
