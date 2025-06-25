@@ -1,6 +1,6 @@
 ---
 title: 'Диагностика'
-weight: 15
+weight: 5
 toc: true
 ---
 
