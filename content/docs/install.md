@@ -14,12 +14,12 @@ toc: true
 
 Поддержки `apk` на данный момент нет. Он будет сделан после того как разгребу основное.
 
-# Требования
+## Требования
 
 - OpenWrt 23.05 и 24.10. Рекомендуется 24.10 из-за обновляющегося sing-box в этой версии.
 - Минимум 20MB свободного места на NAND. `sing-box` идёт как зависимость
 
-# Автоматическая установка и обновление
+## Автоматическая установка и обновление
 
 Вставьте эту строку в консоль роутера
 
@@ -29,13 +29,13 @@ sh <(wget -O - https://raw.githubusercontent.com/itdoginfo/podkop/refs/heads/mai
 
 Если есть уже установленный `podkop`, произойдёт обновление.
 
-# Ручная установка из пакетов
+## Ручная установка из пакетов
 
 1. Сделать `opkg update`, чтобы установились зависимости.
 2. Скачать пакеты `podkop_*.ipk` и `luci-app-podkop_*.ipk` из релиза.
 3. Установить пакеты: `opkg install <путь-до-пакета>`. Первым установить `podkop`, потом `luci-app-podkop`.
 
-# Несовместимость
+## Несовместимость
 
 1. Скрипт **Getdomains** несовместим с `podkop`. Его можно удалить скриптом из репозитория [domain-routing-openwrt](https://github.com/itdoginfo/domain-routing-openwrt)
 
@@ -53,13 +53,13 @@ opkg remove --force-depends luci-app-https-dns-proxy https-dns-proxy luci-i18n-h
 
 3. Legacy `iptables` пакеты, а именно `iptables-mod-extra` мешает работе `tproxy` (необходимо ещё раз провести эксперимент для даблчека).
 
-# Удаление
+## Удаление
 
 ```
 opkg remove luci-i18n-podkop-ru luci-app-podkop podkop
 ```
 
-# Обновление OpenWrt
+## Обновление OpenWrt
 Перед обновление OpenWrt необходимо остановить podkop либо из LuCI, либо командой
 ```
 service podkop stop
