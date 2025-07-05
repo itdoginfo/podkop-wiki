@@ -58,3 +58,22 @@ opkg remove --force-depends luci-app-https-dns-proxy https-dns-proxy luci-i18n-h
 ```
 opkg remove luci-i18n-podkop-ru luci-app-podkop podkop
 ```
+
+# Обновление OpenWrt
+Перед обновление OpenWrt необходимо остановить podkop либо из LuCI, либо командой
+```
+service podkop stop
+```
+
+Если вы уже обновили ОС без стопа и столкнулись с отсуствующим DNS, то
+```
+service podkop stop
+
+uci -q delete dhcp.@dnsmasq[0].server
+uci add_list dhcp.@dnsmasq[0].server="8.8.8.8"
+uci commit dhcp
+service dnsmasq restart
+ntpd -q -p ptbtime1.ptb.de
+
+service podkop start
+```
