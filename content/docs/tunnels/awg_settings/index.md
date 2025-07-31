@@ -90,7 +90,7 @@ Endpoint = HOST:IP
 ### У меня ссылка вида vpn://, что делать?
 
 Если вы настраивали сервер через приложение AmneziaVPN, то вы можете перейти в раздел **Share VPN Access** и выбрать в пункте **Connection format** - **AmneziaWG native format**, после чего нажать кнопку **Share** и получить конфиг в виде необходимых параметров.
-![amneziavpn_share](amneziavpn_share.jpg)
+![amneziavpn_share](images/amneziavpn_share.jpg)
 
 Если вы не являетесь владельцем сервера, то вы можете воспользоваться [данным](https://vpn2config.amphub.fyi/) решением.
 >[!NOTE]
@@ -125,7 +125,7 @@ Endpoint = HOST:IP
 
 В **General Setting** нужно внести параметры из секции `[Interface]` вашего конфига:
 
-![awg_general_settings](awg_general_settings.jpg)
+![awg_general_settings](images/awg_general_settings.jpg)
 
 - Private Key
 - IP Addresses
@@ -142,11 +142,11 @@ echo 'SMJ1k2xXcqQOzuGmbLRZiJdilhpPyW7002FlDmzJoms=' | amneziawg pubkey
 
 Далее переходим на вкладку **AmneziaWG Settings** и заполняем все имеющиеся поля значениями из вашего конфига.
 
-![awg_settings](awg_settings.jpg)
+![awg_settings](images/awg_settings.jpg)
 
 Далее переходим на вкладку **Peers** и нажимаем **Add peer**, а затем **Edit** рядом с появившейся строкой.
 
-![awg_settings](peer_settings.jpg)
+![awg_settings](images/peer_settings.jpg)
 
 В открывшемся окне нам нужно внести параметры из секции `[Peer]` вашего конфига:
 
@@ -164,7 +164,7 @@ echo 'SMJ1k2xXcqQOzuGmbLRZiJdilhpPyW7002FlDmzJoms=' | amneziawg pubkey
 
 У интерфейса должны появиться не нулевые значения в полях **RX и TX**. 
 
-![awg_status](awg_status.jpg)
+![awg_status](images/awg_status.jpg)
 
 ## Настройка через консоль
 

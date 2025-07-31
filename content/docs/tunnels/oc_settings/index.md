@@ -45,7 +45,7 @@ password: 'hGTWLIzox9RNHDL'
 
 Добавляем необходимый интерфейс. Для этого заходим в раздел **Network - Interfaces** и нажимаем **Add new interface**. В качестве `Protocol` выбираем **OpenConnect**, `Name` - Имя интерфейса, в качестве примера используем **oc0**. После этого перед вами откроется страница конфигурации интерфейса. 
 
-![oc_general](oc_general_settings.jpg)
+![oc_general](images/oc_general_settings.jpg)
 
 В открывшемся окне нам нужно внести следующие параметры:
 
@@ -57,7 +57,7 @@ password: 'hGTWLIzox9RNHDL'
 
 У интерфейса должны появиться числа в полях RX и TX. 
 
-![oc_status](oc_status.jpg)
+![oc_status](images/oc_status.jpg)
 
 ## Настройка через консоль
 ### Настройка через файл конфигурации

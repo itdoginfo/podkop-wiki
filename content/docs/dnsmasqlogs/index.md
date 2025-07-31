@@ -7,14 +7,14 @@ weight: 30
 
 В LuCi переходите **Network** - **DHCP and DNS** выбираете вкладку **Log**.
 
-![dnsmasq log queries](dnsmasq-log-queries.png)
+![dnsmasq log queries](images/dnsmasq-log-queries.png)
 
 Активируете **Log queries** и **Save & Apply**. Теперь в syslog у вас будут записываться все DNS-запросы, которые приходят к роутеру.
 
 Два способа посмотреть логи:
 
 1. LuCi: **Status** - **System log**, кнопка **Scroll to tail**. Вы окажитесь в самом конце лога и теперь будет видны все DNS-запросы, которые приходят к роутеру.
-![dnsmasq logs](dnsmasq-logs.png)
+![dnsmasq logs](images/dnsmasq-logs.png)
 
 2. Консоль: ```logread -f -e dnsmasq```
 

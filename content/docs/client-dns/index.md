@@ -23,13 +23,13 @@ DoH нет на уровне систем iOS, MacOS и Linux. В Windows 11 DoH
 **Настройки | Settings** - **Приватность и безопасность | Privacy and security**
 
 Промотайте вниз до **Использовать безопасный DNS | Use secure DNS** и выключите его.
-![Chrome DoH](clientdns-chrome.png)
+![Chrome DoH](images/chrome.png)
 
 ## FireFox
 **Настройки | Settings** - **Приватность и безопасность | Privacy & security**
 
 Промотайте вниз до **DNS over HTTPS** и выберите **Off**.
-![FireFox DoH](clientdns-firefox.png)
+![FireFox DoH](images/firefox.png)
 
 ## Android
 Во всех последних версиях Android DoH включён на уровне системы, там он именуется **Приватный DNS | Private DNS**.
@@ -38,7 +38,7 @@ DoH нет на уровне систем iOS, MacOS и Linux. В Windows 11 DoH
 
 Либо **Настройки | Settings** - **Подключения и обмен** - **Приватный DNS | Private DNS**
 
-![Android PrivateDNS](clientdns-android.jpg)
+![Android PrivateDNS](images/android.jpg)
 
 ## Windows
 В Windows 11 DoH на уровне системы можно включить только специально в режиме ручной настройки DNS. Если вы это не трогали, то скорее всего, он у вас выключен. Это легко проверить.
@@ -50,7 +50,7 @@ DoH нет на уровне систем iOS, MacOS и Linux. В Windows 11 DoH
 
 Опция **Назначение DNS-сервера | DNS server assignment** должна стоять в режиме **Автоматически | Automatic (DHCP)**
 
-![Winodows Ethernet](windows-doh-ethernet.png)
+![Winodows Ethernet](images/windows-doh-ethernet.png)
 
 ### Wi-Fi
 **Сеть и Интернет | Network & internet** - **Wi-Fi**
@@ -59,29 +59,29 @@ DoH нет на уровне систем iOS, MacOS и Linux. В Windows 11 DoH
 
 Опция **Назначение DNS-сервера | DNS server assignment** должна стоять в режиме **Автоматически | Automatic (DHCP)**
 
-![Winodows Wi-Fi](windows-doh-wifi.png)
+![Winodows Wi-Fi](images/windows-doh-wifi.png)
 
 ### Отключение IPv6
 
 Если при выполнении команды `nslookup` вы видите в ответе адреса вида `2001:0db8:11a3:09d7:1f34:8a2e:07a0:765d` значит на адаптере не отключена поддержка ipv6. 
 
 Чтобы при работе с Podkop не было проблем, потребуется отключить его поддержку. Для этого переходим в **Параметры сети Интернет | Настройка параметров адаптера | Свойства** и снимаем галочку с **IP версии 6(TCP/IPv6)**
-![Windows IPv6 Disable](windows-ipv6-disable.jpg)
+![Windows IPv6 Disable](images/windows-ipv6-disable.jpg)
 
 ---
 
 Проверьте, что в информации о подключении в пункте **IPv4 DNS servers** указан ваш роутер.
 
-![Winodows interface](windows-interface.png)
+![Winodows interface](images/windows-interface.png)
 
 ## Другие ОС
 Необходимо, чтобы на интерфейсе устройства был настроен роутер в качестве DNS-сервера.
 
 Во-первых проверьте, что интерфейс получает настройки от роутера по DHCP.
-![OS Interface DHCP](clientdns-interface-dhcp.png)
+![OS Interface DHCP](images/interface-dhcp.png)
 
 Если вы используете статику и она вам необходима, то в DNS обязательно должен быть указан роутер в качестве DNS.
 
 Во-вторых проверьте, что интерфейс получил в качестве DNS-сервера IP-адрес роутера.
 
-![OS Interface router dns](clientdns-interface-router.png)
+![OS Interface router dns](images/interface-router.png)

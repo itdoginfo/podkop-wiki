@@ -62,7 +62,7 @@ AllowedIPs = 0.0.0.0/0
 
 В **General Setting** нужно внести параметры из секции `[Interface]` вашего конфига:
 
-![wg_general_settings](wg_general_settings.jpg)
+![wg_general_settings](images/wg_general_settings.jpg)
 
 - Private Key
 - IP Addresses
@@ -78,7 +78,7 @@ echo 'SMJ1k2xXcqQOzuGmbLRZiJdilhpPyW7002FlDmzJoms=' | wg pubkey
 
 Далее переходим на вкладку **Peers** и нажимаем **Add peer**, а затем **Edit** рядом с появившейся строкой.
 
-![peer_settings](peer_settings.jpg)
+![peer_settings](images/peer_settings.jpg)
 
 В открывшемся окне нам нужно внести параметры из секции `[Peer]` вашего конфига:
 
@@ -96,7 +96,7 @@ echo 'SMJ1k2xXcqQOzuGmbLRZiJdilhpPyW7002FlDmzJoms=' | wg pubkey
 
 У интерфейса должны появиться числа в полях RX и TX. 
 
-![wg_status](wg_status.jpg)
+![wg_status](images/wg_status.jpg)
 
 ## Настройка через консоль
 
