@@ -65,4 +65,4 @@ https://github.com/itdoginfo/allow-domains/
 
 # Как это настраивается в LuCi
 
-![section](luci-section-example.png)
+![section](images/luci-section-example.png)

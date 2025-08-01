@@ -81,14 +81,14 @@ Mon Jun  2 16:40:47 2025 daemon.notice openvpn(client)[28313]: Exiting due to fa
 
 Заходим в LuCi и переходим в раздел **VPN-OpenVPN**.
 
-![openvpn_general_settings](ovpn_general_settings.jpg)
+![openvpn_general_settings](images/ovpn_general_settings.jpg)
 
 В разделе **OVPN configuration file upload** в поле `Instance name` вводим произвольное имя, нажимаем **Choose file**, выбираем конфиг в формате .ovpn, после чего нажимаем **Upload**.
 
 Этот конфиг появится в разделе **OpenPN instances**. Включите его, отметив галочкой в столбце **Enabled**, и нажмите **Save & Apply**
 
 В столбце **Started** должен появиться статус **yes**. С помощью нажатия на кнопку **start/stop** мы можем останавливать и запускать туннель. Если вам нужно отредактировать конфиг намите кнопку **Edit** рядом с вашими настройками, внесите необходимые изменения и нажмите **Save**.
-![ovpn_status](ovpn_status.jpg)
+![ovpn_status](images/ovpn_status.jpg)
 
 ## Настройка через консоль (копированием файла конфигурации на роутер):
 
