@@ -1,12 +1,15 @@
 ---
 title: "Главная"
+weight: 25
 ---
+<br/>
 
 Инструмент для роутеров на базе системы `OpenWrt`, который позволяет направлять определённые домены, IP-адреса, подсети в proxy/VPN/туннели.
 
-Базируется на `sing-box`. Используется схема `FakeIP`.
+Базируется на [sing-box](https://sing-box.sagernet.org/). Используется схема [FakeIP](/docs/fakeip/).
 
-Находится на стадии [бета-тестирования](https://ru.wikipedia.org/wiki/Бета-тестирование).
+> [!NOTE]
+> Находится на стадии [бета-тестирования](https://ru.wikipedia.org/wiki/Бета-тестирование).
 
 <div style="display: flex; justify-content: center; margin-top: 10px;">
   <div style="display: flex; gap: 10px; align-items: center;">
