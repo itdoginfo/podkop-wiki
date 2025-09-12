@@ -19,9 +19,27 @@ layout: hextra-home
          Направляйте нужные ресурсы в туннель, а остальное — напрямую. <br>
          Открытый инструмент на базе sing-box и FakeIP.
       </p>
-     <div class="custom-cta">
-        {{< card link="/docs/install/" title="Установить Podkop" icon="light-bulb" >}}
-     </div>
+      <a
+         href="/docs/install/"
+         class="main-cta-button inline-flex items-center justify-center text-base font-semibold rounded-xl px-6 py-3 text-center transition-colors hover:brightness-95 focus:outline-none focus:ring-2 ring-gray-300"
+         >
+         Установить Podkop
+         <svg
+            class="rtl:rotate-180 w-4 h-4 ms-3"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 14 10"
+            >
+            <path
+               stroke="currentColor"
+               stroke-linecap="round"
+               stroke-linejoin="round"
+               stroke-width="2"
+               d="M1 5h12m0 0L9 1m4 4L9 9"
+               />
+         </svg>
+      </a>
    </div>
 </section>
 
