@@ -1,3 +1,7 @@
+:root {
+    --never-used: transparent;
+}
+
 .custom-cta {
     display: inline-block;
 }
