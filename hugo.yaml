@@ -1,6 +1,6 @@
 baseURL: https://podkop.net/
 languageCode: ru-ru
-title: Podkop wiki
+title: Podkop
 
 module:
   imports:
@@ -25,9 +25,6 @@ params:
 
 menu:
   main:
-    - name: Документация
-      pageRef: /docs
-      weight: 1
     - name: Поиск
       weight: 4
       params:

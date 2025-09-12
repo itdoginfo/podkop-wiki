@@ -1,7 +1,6 @@
 ---
-title: 'Оглавление'
-cascade:
-  type: docs
+title: "Документация"
+url: "/docs"
 ---
 
-Используйте навигацию слева для настольных систем. И две полоски сверху справа для смартфонов.
+<meta http-equiv="refresh" content="0; url=/docs/install/">
