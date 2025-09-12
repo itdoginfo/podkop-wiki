@@ -11,3 +11,7 @@ html.dark .main-cta-button {
     background-color: rgb(243 244 246 / var(--tw-bg-opacity));
     color: rgb(17 17 17 / var(--tw-text-opacity));
 }
+
+.hextra-card {
+    text-decoration: none;
+}
