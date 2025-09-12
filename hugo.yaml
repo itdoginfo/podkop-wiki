@@ -34,6 +34,11 @@ menu:
       url: "https://github.com/itdoginfo/podkop"
       params:
         icon: github
+    - name: Telegram
+      weight: 5
+      url: "https://t.me/itdogchat/81758"
+      params:
+        icon: telegram
 
 markup:
   defaultMarkdownHandler: goldmark
