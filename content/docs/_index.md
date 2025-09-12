@@ -1,6 +1,6 @@
 ---
-title: "Документация"
-url: "/docs"
+title: "Docs"
+aliases:
+  - /docs/
+url: /docs/install/
 ---
-
-<meta http-equiv="refresh" content="0; url=/docs/install/">
