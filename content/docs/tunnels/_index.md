@@ -3,12 +3,10 @@ title: 'Туннели'
 weight: 6
 ---
 
-Инструкции, как настраивать VPN и туннели для использования в Podkop.
-
-[AmneziaWG](/docs/tunnels/awg_settings/)
-
-[Wireguard](/docs/tunnels/wg_settings/)
-
-[OpenVPN](/docs/tunnels/ovpn_settings/)
-
-[OpenConnect](/docs/tunnels/oc_settings/)
+<br>
+{{< cards cols="1" >}}
+    {{< card link="/docs/tunnels/awg_settings/" title="AmneziaWG" >}}
+    {{< card link="/docs/tunnels/wg_settings/" title="Wireguard" >}}
+    {{< card link="/docs/tunnels/ovpn_settings/" title="OpenVPN" >}}
+    {{< card link="/docs/tunnels/oc_settings/" title="OpenConnect" >}}
+{{< /cards >}}
