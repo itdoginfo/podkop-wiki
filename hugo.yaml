@@ -35,7 +35,7 @@ menu:
       params:
         icon: github
     - name: Telegram
-      weight: 5
+      weight: 6
       url: "https://t.me/itdogchat/81758"
       params:
         icon: telegram
