@@ -9,11 +9,11 @@ toc: true
 - SDK, чтобы собирать пакеты
 
 Для сборки пакетов нужен SDK, один из вариантов скачать прям файл и разархивировать
-https://downloads.openwrt.org/releases/23.05.5/targets/x86/64/
+https://downloads.openwrt.org/releases/24.10.2/targets/x86/64/
 Нужен файл в имени которого есть SDK
 
 ```
-wget https://downloads.openwrt.org/releases/23.05.5/targets/x86/64/openwrt-sdk-23.05.5-x86-64_gcc-12.3.0_musl.Linux-x86_64.tar.xz
+wget https://downloads.openwrt.org/releases/24.10.2/targets/x86/64/openwrt-sdk-24.10.2-x86-64_gcc-13.3.0_musl.Linux-x86_64.tar.zst
 tar xf openwrt-sdk-23.05.5-x86-64_gcc-12.3.0_musl.Linux-x86_64.tar.xz
 mv openwrt-sdk-23.05.5-x86-64_gcc-12.3.0_musl.Linux-x86_64 SDK
 ```
@@ -30,9 +30,10 @@ ln -s ~/podkop/podkop package/utilites/podkop
 ln -s ~/podkop/luci-app-podkop package/luci-app-podkop
 ```
 
-В первый раз для сборки luci-app необходимо обновить пакеты
+В первый раз для сборки luci-app необходимо обновить и установить пакеты
 ```
 ./scripts/feeds update -a
+./scripts/feeds install -a
 ```
 
 Для make можно добавить флаг -j N, где N - количество ядер для сборки.
