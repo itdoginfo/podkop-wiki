@@ -49,6 +49,11 @@ make package/podkop/{clean,compile} V=s
 make package/luci-app-podkop/{clean,compile} V=s
 ```
 
+Оба сразу
+```
+make package/luci-app-podkop/{clean,compile} package/podkop/{clean,compile} V=s
+```
+
 .ipk находятся в `bin/packages/x86_64/base/`
 
 ## Ошибки
