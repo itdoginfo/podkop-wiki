@@ -50,13 +50,13 @@ layout: hextra-home
     </h2>
     <div class="hx-grid hx-grid-cols-1 md:hx-grid-cols-2 hx-gap-4">
       {{< card link="/docs/base-settings/" title="Основные настройки" icon="cog" >}}
-      {{< card link="/docs/diagnostics/" title="Диагностика" icon="clipboard-list" >}}
+      {{< card link="/docs/troubleshooting/" title="Поиск и устранение неисправностей" icon="clipboard-list" >}}
       {{< card link="/docs/sections/" title="Несколько маршрутов" icon="cloud" >}}
       {{< card link="/docs/tunnels/awg_settings/" title="Amnezia WG" icon="shield-check" >}}
       {{< card link="/docs/client-dns/" title="DNS на клиентах" icon="globe-alt" >}}
       {{< card link="/docs/tunnels/" title="Туннели" icon="map" >}}
       {{< card link="/docs/clear-browser-cache/" title="Сброс кеша в браузере" icon="refresh" >}}
-      {{< card link="/docs/fakeip/" title="FakeIP" icon="academic-cap" >}}
+      {{< card link="/docs/faq/" title="Часто задаваемые вопросы" icon="academic-cap" >}}
     </div>
   </div>
 </section>
