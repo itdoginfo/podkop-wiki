@@ -202,12 +202,12 @@ Destination  Gateway     Genmask        Flags Metric Ref Use Iface
 Второй участник звонка также должен использовать прокси.
 
 #### Как настроить работу Gemini?
-Включите предустановленный список `Google AI` и проверьте при помощи [скрипта ipregion](https://github.com/vernette/ipregion), как Google определяет страну вшего VPS-сервера. 
+Включите предустановленный список `Google AI` и проверьте при помощи [скрипта ipregion](https://github.com/vernette/ipregion), как Google определяет страну вашего VPS-сервера. 
 [В каких странах работает Gemini](https://support.google.com/gemini/answer/13575153?hl=ru)
 
 #### Как настроить работу ChatGPT?
 Сервисы OpenAI входят в предустановленные списки `Russia inside` и `Geoblock`. Если один из этих списков выбран, а сервис выдает ошибку `Unable to load site`, 
-проверьте при помощи [скрипта ipregion](https://github.com/vernette/ipregion), как OpenAI определяет страну вшего VPS-сервера.
+проверьте при помощи [скрипта ipregion](https://github.com/vernette/ipregion), как OpenAI определяет страну вашего VPS-сервера.
 [В каких странах работает ChatGPT](https://help.openai.com/en/articles/7947663-chatgpt-supported-countries)
 
 #### Как настроить несколько VLESS-ссылок для автоматического переключения?
