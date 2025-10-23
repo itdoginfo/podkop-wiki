@@ -32,24 +32,27 @@ config extra 'wg'
 - News
 - Anime
 - Youtube
-- Meta
+- Meta*
 - Twitter(X)
 - HDRezka
 - Tik-Tok
 
-Подсписки Meta, Twitter, Cloudflare и Discord содержат так же подсети указанных сервисов, которые по-умолчанию отсутствуют в Russia inside.
+Подсписки Meta*, Twitter, Cloudflare и Discord содержат так же подсети указанных сервисов, которые по-умолчанию отсутствуют в Russia inside.
 Подсети необходимы если вам нужны рабочие голосовые чаты в Discord или какой-то из вышеназванных трех сервисов работает плохо, что-то не загружается или тормозит.
 
 Таким образом, при использовании Russia inside вы можете выбрать дополнительно следующие списки:
-- Meta
+- Meta*
 - Twitter
 - Discord
 - Telegram
 - Cloudflare
 - Google AI
 - Google Play
+- H.O.D.C.A. (Список доменов за CF, AWS итд)
 - Hetzner ASN
 - OVH ASN
+- Digital Ocean ASN
+- CloudFront ASN
 
 Вместе нельзя выбрать и использовать:
 - Russia inside
@@ -66,3 +69,7 @@ https://github.com/itdoginfo/allow-domains/
 # Как это настраивается в LuCi
 
 ![section](images/luci-section-example.png)
+
+---
+
+\* Meta Platforms Inc. — организация, признанная экстремистской и запрещённая на территории РФ.
