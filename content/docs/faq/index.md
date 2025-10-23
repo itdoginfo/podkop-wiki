@@ -197,7 +197,7 @@ Destination  Gateway     Genmask        Flags Metric Ref Use Iface
 Используйте опцию [Исключение прокси IP | Exclude IP from proxy](/docs/base-settings/#ip-%d0%b4%d0%bb%d1%8f-%d0%b8%d1%81%d0%ba%d0%bb%d1%8e%d1%87%d0%b5%d0%bd%d0%b8%d1%8f--ip-for-exclusion)
 
 #### Как заставить работать звонки в Telegram, WhatsApp и Discord?
-Добавьте в настройки секции предустановленные списки Telegram, Meta (для WhatsApp) и Discord. 
+Добавьте в настройки секции предустановленные списки Telegram, Meta* (для WhatsApp**) и Discord. 
 Для Telegram и WhatsApp необходимо отключить p2p-звонки в настройках самих мессенджеров. 
 Второй участник звонка также должен использовать прокси.
 
@@ -235,4 +235,9 @@ Destination  Gateway     Genmask        Flags Metric Ref Use Iface
 #### Можно ли загрузить в Podkop подписку (ссылку, содержащую параметры для подключения к нескольким серверам)?
 Пока встроенной поддержки подписок нет. Нужно извлечь из подписки отдельные ссылки (например, VLESS) и вставить их в разные [секции](/docs/sections/) или в тип конфигурации URLTest.
 
+---
+
+\* Meta Platforms Inc. — организация, признанная экстремистской и запрещённая на территории РФ.
+
+\*\* WhatsApp принадлежит компании Meta Platforms Inc., признанной экстремистской организацией на территории РФ.
 
