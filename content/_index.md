@@ -49,9 +49,9 @@ layout: hextra-home
       Популярные статьи
     </h2>
     <div class="hx-grid hx-grid-cols-1 md:hx-grid-cols-2 hx-gap-4">
-      {{< card link="/docs/base-settings/" title="Основные настройки" icon="cog" >}}
+      {{< card link="/docs/settings/" title="Настройки" icon="cog" >}}
       {{< card link="/docs/troubleshooting/" title="Поиск и устранение неисправностей" icon="clipboard-list" >}}
-      {{< card link="/docs/sections/" title="Несколько маршрутов" icon="cloud" >}}
+      {{< card link="/docs/sections/" title="Секции" icon="cloud" >}}
       {{< card link="/docs/tunnels/awg_settings/" title="Amnezia WG" icon="shield-check" >}}
       {{< card link="/docs/client-dns/" title="DNS на клиентах" icon="globe-alt" >}}
       {{< card link="/docs/tunnels/" title="Туннели" icon="map" >}}
