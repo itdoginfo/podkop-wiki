@@ -15,7 +15,7 @@ sh <(wget -O - https://raw.githubusercontent.com/itdoginfo/podkop/refs/heads/mai
 
 #### Как правильно обновить `sing-box`?
 **Вариант 1: Обновление через скрипт `Podkop`**  
-[Скрипт для автоматической установки](/docs/install/#%d0%b0%d0%b2%d1%82%d0%be%d0%bc%d0%b0%d1%82%d0%b8%d1%87%d0%b5%d1%81%d0%ba%d0%b0%d1%8f-%d1%83%d1%81%d1%82%d0%b0%d0%bd%d0%be%d0%b2%d0%ba%d0%b0-%d0%b8-%d0%be%d0%b1%d0%bd%d0%be%d0%b2%d0%bb%d0%b5%d0%bd%d0%b8%d0%b5)
+[Скрипт для автоматической установки](/docs/install/#avtomaticheskaya-ustanovka-i-obnovlenie)
 обновит `sing-box`, если ваша текущая версия ниже минимально необходимой для работы `Podkop`.
 
 **Вариант 2: Обновление до последней версии вручную**  
@@ -129,12 +129,12 @@ sysctl -p
 
 Обычно такое не требуется, но если вы хотите провести какие-то тесты или сравнения:
 - скачайте *.ipk файлы из нужного вам [релиза](https://github.com/itdoginfo/podkop/releases)
-- воспользуйтесь инструкцией [по ручной установке Podkop](/docs/install/#%d1%80%d1%83%d1%87%d0%bd%d0%b0%d1%8f-%d1%83%d1%81%d1%82%d0%b0%d0%bd%d0%be%d0%b2%d0%ba%d0%b0-%d0%b8%d0%b7-%d0%bf%d0%b0%d0%ba%d0%b5%d1%82%d0%be%d0%b2)
+- воспользуйтесь инструкцией [по ручной установке Podkop](/docs/install/#ruchnaya-ustanovka-iz-paketov)
 
 #### Сохранятся ли настройки Podkop при обновлении прошивки OpenWrt?
 Сам пакет `Podkop` после обновления (sysupgrade) нужно будет [установить вновь](/docs/install/).
 При этом настройки можно сохранить, если при обновлении вы выберете опцию сохранения конфигурации.
-Перед обновлением прошивки нужно [остановить сервис Podkop](/docs/install/#%d0%be%d0%b1%d0%bd%d0%be%d0%b2%d0%bb%d0%b5%d0%bd%d0%b8%d0%b5-openwrt)
+Перед обновлением прошивки нужно [остановить сервис Podkop](/docs/install/#obnovlenie-openwrt)
 
 ## Настройка маршрутизации и списков
 
@@ -142,7 +142,7 @@ sysctl -p
 
 Чтобы направить весь трафик одного устройства через туннель:
 - назначьте этому устройству [статический IP](https://openwrt.org/docs/guide-user/luci/static_ip)
-- в настройках `Podkop` добавьте IP-адрес устройства в [список для полного перенаправления](/docs/sections/#%d0%bf%d0%be%d0%bb%d0%bd%d0%be%d1%81%d1%82%d1%8c%d1%8e-%d0%bc%d0%b0%d1%80%d1%88%d1%80%d1%83%d1%82%d0%b8%d0%b7%d0%b8%d1%80%d1%83%d0%b5%d0%bc%d1%8b%d0%b5-ip-%d0%b0%d0%b4%d1%80%d0%b5%d1%81%d0%b0--ip-for-full-redirection)
+- в настройках `Podkop` добавьте IP-адрес устройства в [список для полного перенаправления](/docs/sections/#polnostyu-marshrutiziruemye-ip-adresa-ip-for-full-redirection)
 
 Назначение `Podkop` -- "точечная" маршрутизация трафика, поэтому в web-интерфейсе отправка **всех устройств** в туннель не настраивается.  
 
@@ -167,7 +167,7 @@ service podkop restart
 Например, 4pda.to входит в список Geoblock
 - В настройках `Podkop` удалите Russia-inside из используемых предустановленных списков
 - Добавьте все остальные подписки Russia-inside
-- Нужные домены списка, куда входит сайт для исключения - добавьте как [пользовательские домены](/docs/sections/#%d1%82%d0%b8%d0%bf-%d0%bf%d0%be%d0%bb%d1%8c%d0%b7%d0%be%d0%b2%d0%b0%d1%82%d0%b5%d0%bb%d1%8c%d1%81%d0%ba%d0%be%d0%b3%d0%be-%d1%81%d0%bf%d0%b8%d1%81%d0%ba%d0%b0-%d0%b4%d0%be%d0%bc%d0%b5%d0%bd%d0%be%d0%b2--user-domain-list-type)
+- Нужные домены списка, куда входит сайт для исключения - добавьте как [пользовательские домены](/docs/sections/#tip-polzovatelskogo-spiska-domenov-user-domain-list-type)
 > Подробное описание смотрите в статье [Секции](/docs/sections/)
 
 **Вариант 2.** Соберите свой список доменов самостоятельно, например, сделав форк [репозитория](https://github.com/itdoginfo/allow-domains/)
@@ -194,7 +194,7 @@ Destination  Gateway     Genmask        Flags Metric Ref Use Iface
 ```
 
 #### Как исключить определенное устройство из туннеля?
-Используйте опцию [Исключенные из маршрутизации IP-адреса | IP for exclusion](/docs/settings/#%d0%b8%d1%81%d0%ba%d0%bb%d1%8e%d1%87%d0%b5%d0%bd%d0%bd%d1%8b%d0%b5-%d0%b8%d0%b7-%d0%bc%d0%b0%d1%80%d1%88%d1%80%d1%83%d1%82%d0%b8%d0%b7%d0%b0%d1%86%d0%b8%d0%b8-ip-%d0%b0%d0%b4%d1%80%d0%b5%d1%81%d0%b0--ip-for-exclusion)
+Используйте опцию [Исключенные из маршрутизации IP-адреса | IP for exclusion](/docs/settings/#isklyuchennye-iz-marshrutizatsii-ip-adresa-ip-for-exclusion)
 
 #### Как заставить работать звонки в Telegram, WhatsApp и Discord?
 Добавьте в настройки секции предустановленные списки Telegram, Meta* (для WhatsApp**) и Discord. 
@@ -218,7 +218,7 @@ Destination  Gateway     Genmask        Flags Metric Ref Use Iface
 - Для прокси (`VLESS`, `Shadowsock`) происходит на сервере, настройками `Podkop` выбрать DNS-сервер для них нельзя.
 - Для VPN-интерфейсов (`Wireguard`, `Amnezia WG`, `OpenVPN`) можно выбрать свой DNS-сервер для каждой секции при помощи настройки `Резолвер доменов | Domain Resolver`. Запросы к этому серверу будут направляться через соответствующий туннель.
 
-**Домены не из списков**: используется сервер указанный в опции [DNS-сервер](/docs/settings/#dns-%d1%81%d0%b5%d1%80%d0%b2%d0%b5%d1%80--dns-server) на вкладке `Настройки | Settings`.  
+**Домены не из списков**: используется сервер указанный в опции [DNS-сервер](/docs/settings/#dns-server-dns-server) на вкладке `Настройки | Settings`.  
 Более гибкая настройка (индивидуальные сервера для отдельных доменов) возможна при помощи опции [Dont touch my DHCP!](/docs/dont-touch-my-dhcp/)  
 Подробности в документации dnsmasq: [Selective DNS forwarding](https://openwrt.org/docs/guide-user/base-system/dhcp_configuration#selective_dns_forwarding)
 
