@@ -280,7 +280,7 @@ uci set network.peer.allowed_ips="0.0.0.0/0"
 uci set network.peer.preshared_key="$PRESHARED_KEY"
 ```
 
-Описание опций можно узнать [здесь](#%d1%87%d0%b0%d1%81%d1%82%d1%8c-interface)
+Описание опций можно узнать [здесь](#chast-interface).
 
 Затем применить изменения и перезагрузить сеть.
 ```
