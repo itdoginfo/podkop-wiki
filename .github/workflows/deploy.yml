@@ -1,0 +1,25 @@
+name: CD
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: self-hosted
+
+    steps:
+      - uses: actions/checkout@v5.0.0
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3.0.0
+        with:
+          hugo-version: '0.147.3'
+          # extended: true
+
+      - name: Build
+        run: hugo
+
+      - name: Deploy
+        run: rsync -a ./public/* /var/podkop/ --delete
+        shell: bash
