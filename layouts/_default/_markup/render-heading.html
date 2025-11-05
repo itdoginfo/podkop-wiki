@@ -1,0 +1,32 @@
+{{- $text := .PlainText -}}
+
+{{/* Basic Cyrillic → Latin map (extend as needed) */}}
+{{- $pairs := dict
+  "А" "A" "а" "a" "Б" "B" "б" "b" "В" "V" "в" "v"
+  "Г" "G" "г" "g" "Д" "D" "д" "d" "Е" "E" "е" "e"
+  "Ё" "E" "ё" "e" "Ж" "Zh" "ж" "zh" "З" "Z" "з" "z"
+  "И" "I" "и" "i" "Й" "I" "й" "i" "К" "K" "к" "k"
+  "Л" "L" "л" "l" "М" "M" "м" "m" "Н" "N" "н" "n"
+  "О" "O" "о" "o" "П" "P" "п" "p" "Р" "R" "р" "r"
+  "С" "S" "с" "s" "Т" "T" "т" "t" "У" "U" "у" "u"
+  "Ф" "F" "ф" "f" "Х" "H" "х" "h" "Ц" "Ts" "ц" "ts"
+  "Ч" "Ch" "ч" "ch" "Ш" "Sh" "ш" "sh" "Щ" "Sch" "щ" "sch"
+  "Ъ" ""  "ъ" ""  "Ы" "Y" "ы" "y" "Ь" ""  "ь" ""
+  "Э" "E" "э" "e" "Ю" "Yu" "ю" "yu" "Я" "Ya" "я" "ya"
+-}}
+
+{{- $latin := $text -}}
+{{- range $k, $v := $pairs -}}
+  {{- $latin = replace $latin $k $v -}}
+{{- end -}}
+
+{{/* Normalize: lower, replace non [a-z0-9]+ with '-', trim '-' */}}
+{{- $lower := lower $latin -}}
+{{- $hyphened := replaceRE "[^a-z0-9]+" "-" $lower -}}
+{{- $clean := replaceRE "^-+|-+$" "" $hyphened -}}
+{{- $id := $clean | safeURL -}}
+
+<h{{ .Level }} id="{{ $id }}">
+  {{ .Text }}
+  <a href="#{{ $id }}">#</a>
+</h{{ .Level }}>
