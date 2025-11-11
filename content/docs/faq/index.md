@@ -226,8 +226,20 @@ Destination  Gateway     Genmask        Flags Metric Ref Use Iface
 Используйте "смешанный режим" (Mixed mode) и настройте прокси в браузере. Либо, если возможно, настройте подключение к корпоративному VPN прямо на роутере.
 Подробности в статье [Корпоративный VPN](/docs/workvpn/)
 
-#### Как настроить гостевую Wi-Fi сеть, чтобы она не использовала Podkop?
+## Гостевая Wi-Fi сеть и `Podkop`
+
+##### Как настроить гостевую Wi-Fi сеть, чтобы она **НЕ** использовала Podkop?
 Создайте для гостевой сети отдельный сетевой интерфейс (например, br-guest) и не включайте его в опцию "Source Network interface" в настройках Podkop.
+
+##### Как настроить гоствую Wi-Fi сеть, чтобы она использовала Podkop?
+Необходимо выполнить следующие шаги:
+1. Создать гостевую сеть как указано в [документации](https://openwrt.org/docs/guide-user/network/wifi/guestwifi/configuration_webinterface).
+2. В настройках LuCI **Network -> Firewall** для созданной в прошлом пункте зоны указать для **Input** и **Infra Zone Forward** accept, как на изображении:
+![wifi_guest_firewall](images/luci_guest_wifi_firewall.png)
+3. В настройках LuCI **Network -> Firewall -> Traffic Rules** создать следующее правило:
+![wifi_guest_traffic_rules](images/luci_guest_wifi_traffic_rules.png)
+4. Указать во вкладке **Настройки** `Podkop` в качестве **Source Network Interface** устройство, созданное в первом пункте. Если вы следовали инструкции это будет **br-guest**.
+5. Не забывайте нажимать **Save & Apply** после внесения настроек.
 
 #### Как заблокировать нежелательные сайты?
 Создайте отдельную секцию, выберите для нее режим `Block` и добавьте предустановленный список (например, `Porn`) или свой список доменов.
