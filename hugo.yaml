@@ -2,9 +2,12 @@ baseURL: https://podkop.net/
 languageCode: ru-ru
 title: Podkop
 
+
 module:
   imports:
     - path: github.com/imfing/hextra
+
+defaultContentLanguage: ru
 
 params:
   navbar:
@@ -49,3 +52,4 @@ markup:
 services:
   googleAnalytics:
     ID: G-L8FLJF5S5R
+
