@@ -69,7 +69,7 @@
   {{- range $headings }}
     {{- if .Title }}
 
-    {{- $transliteratedId := partial "transliterate.html" .ID -}}
+    {{- $transliteratedId := partial "transliterate.html" (.Title | plainify) -}}
 
       <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
         <a class="{{ $class }} hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#{{ $transliteratedId }}">

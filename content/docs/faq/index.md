@@ -152,7 +152,7 @@ sysctl -p
 
 Чтобы направить весь трафик одного устройства через туннель:
 - назначьте этому устройству [статический IP](https://openwrt.org/docs/guide-user/luci/static_ip)
-- в настройках `Podkop` добавьте IP-адрес устройства в [список для полного перенаправления](/docs/sections/#polnostyu-marshrutiziruemye-ip-adresa--ip-for-full-redirection)
+- в настройках `Podkop` добавьте IP-адрес устройства в [список для полного перенаправления](/docs/sections/#polnostyu-marshrutiziruemye-ip-adresa-ip-for-full-redirection)
 
 Назначение `Podkop` -- "точечная" маршрутизация трафика, поэтому в web-интерфейсе отправка **всех устройств** в туннель не настраивается.  
 
@@ -177,7 +177,7 @@ service podkop restart
 Например, 4pda.to входит в список Geoblock
 - В настройках `Podkop` удалите Russia-inside из используемых предустановленных списков
 - Добавьте все остальные подписки Russia-inside
-- Нужные домены списка, куда входит сайт для исключения - добавьте как [пользовательские домены](/docs/sections/#tip-polzovatelskogo-spiska-domenov--user-domain-list-type)
+- Нужные домены списка, куда входит сайт для исключения - добавьте как [пользовательские домены](/docs/sections/#tip-polzovatelskogo-spiska-domenov-user-domain-list-type)
 > Подробное описание смотрите в статье [Секции](/docs/sections/)
 
 **Вариант 2.** Соберите свой список доменов самостоятельно, например, сделав форк [репозитория](https://github.com/itdoginfo/allow-domains/)
@@ -204,7 +204,7 @@ Destination  Gateway     Genmask        Flags Metric Ref Use Iface
 ```
 
 #### Как исключить определенное устройство из туннеля?
-Используйте опцию [Исключенные из маршрутизации IP-адреса | IP for exclusion](/docs/settings/#isklyuchennye-iz-marshrutizacii-ip-adresa--ip-for-exclusion).
+Используйте опцию [Исключенные из маршрутизации IP-адреса | IP for exclusion](/docs/settings/#isklyuchennye-iz-marshrutizacii-ip-adresa-ip-for-exclusion).
 
 #### Как заставить работать звонки в Telegram, WhatsApp и Discord?
 Добавьте в настройки секции предустановленные списки Telegram, Meta* (для WhatsApp**) и Discord. 
@@ -228,7 +228,7 @@ Destination  Gateway     Genmask        Flags Metric Ref Use Iface
 - Для прокси (`VLESS`, `Shadowsock`) происходит на сервере, настройками `Podkop` выбрать DNS-сервер для них нельзя.
 - Для VPN-интерфейсов (`Wireguard`, `Amnezia WG`, `OpenVPN`) можно выбрать свой DNS-сервер для каждой секции при помощи настройки `Резолвер доменов | Domain Resolver`. Запросы к этому серверу будут направляться через соответствующий туннель.
 
-**Домены не из списков**: используется сервер указанный в опции [DNS-сервер](/docs/settings/#dns-server--dns-server) на вкладке `Настройки | Settings`.  
+**Домены не из списков**: используется сервер указанный в опции [DNS-сервер](/docs/settings/#dns-server-dns-server) на вкладке `Настройки | Settings`.  
 Более гибкая настройка (индивидуальные сервера для отдельных доменов) возможна при помощи опции [Dont touch my DHCP!](/docs/dont-touch-my-dhcp/)  
 Подробности в документации dnsmasq: [Selective DNS forwarding](https://openwrt.org/docs/guide-user/base-system/dhcp_configuration#selective_dns_forwarding)
 

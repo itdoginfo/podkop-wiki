@@ -15,6 +15,9 @@
   {{- $id = replace $id $cyr $lat -}}
 {{- end -}}
 
-{{- $id = anchorize $id -}}
+{{/* Normalize: replace non [a-z0-9]+ with '-', trim '-' */}}
+{{- $hyphened := replaceRE "[^a-z0-9]+" "-" $id -}}
+{{- $clean := replaceRE "^-+|-+$" "" $hyphened -}}
+{{- $id := $clean | safeURL -}}
 
 {{- return $id -}}

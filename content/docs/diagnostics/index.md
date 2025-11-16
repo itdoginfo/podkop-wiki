@@ -92,7 +92,7 @@ toc: true
 |                                          | ✗      | Таблица отсутствует.                                                                                                                  |
 | **Правила mangle существуют**            |        | Проверяет наличие правил цепочки **mangle** в таблице **PodkopTable**.                                                                |
 |                                          | ✓      | Правила найдены.                                                                                                                      |
-|                                          | ✗      | Правила не найдены. [Проверьте](/docs/troubleshooting/#proverka-pravil-markirovki-i-proksirovaniya-trafika)http://localhost:1313/docs/troubleshooting/#proverka-pravil-markirovki-i-proksirovaniya-trafika правила маркировки трафика. |
+|                                          | ✗      | Правила не найдены. [Проверьте](/docs/troubleshooting/#proverka-pravil-markirovki-i-proksirovaniya-trafika) правила маркировки трафика. |
 | **Счётчики правил mangle**               |        | Проверяет что трафик проходит через правила цепочки **mangle**.                                                                       |
 |                                          | ✓      | Трафик от клиентских устройств доходит до роутера.                                                                                    |
 |                                          | ✗      | Счетчики нулевые, трафик от клиентских устройств не доходит до роутера. Проблема с DNS или шлюзом на клиенте.                         |
