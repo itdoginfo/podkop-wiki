@@ -215,6 +215,19 @@ Destination  Gateway     Genmask        Flags Metric Ref Use Iface
 Включите предустановленный список `Google AI` и проверьте при помощи [скрипта ipregion](https://github.com/vernette/ipregion), как Google определяет страну вашего VPS-сервера. 
 [В каких странах работает Gemini](https://support.google.com/gemini/answer/13575153?hl=ru)
 
+Так же вам может потребоваться отключить ipv6 в xray на сервере. Для этого укажите в настройках следующее правило:
+```
+"outbounds": [
+ {
+     "protocol": "freedom",
+     "settings": {
+         "domainStrategy": "UseIPv4"
+     },
+     "tag": "direct"
+ }
+]
+```
+
 #### Как настроить работу ChatGPT?
 Сервисы OpenAI входят в предустановленные списки `Russia inside` и `Geoblock`. Если один из этих списков выбран, а сервис выдает ошибку `Unable to load site`, 
 проверьте при помощи [скрипта ipregion](https://github.com/vernette/ipregion), как OpenAI определяет страну вашего VPS-сервера.
