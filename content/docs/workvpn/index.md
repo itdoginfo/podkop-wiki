@@ -37,3 +37,9 @@ Network Interface: выбираем созданный интерфейс
 User Domain List Type: выбираем Text List или Dynamic List и указываем корпоративные домены  
 3. LuCI &#8594; Services &#8594; Podkop &#8594; Additional Settings: включаем Split DNS (тип UDP, адрес вашего DNS из корпоративной сети).
 4. Добавляем **дополнительные** секции для прокси и раздельного туннелирования по спискам.
+
+## Viscosity VPN
+
+Для нормальной работы `Podkop` укажите в настройках клиента Viscosity **Раздельный DNS**:
+
+![viscosity-vpn-split-dns](images/viscosity-vpn-split-dns.jpg)
