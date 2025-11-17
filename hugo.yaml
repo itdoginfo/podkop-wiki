@@ -6,6 +6,8 @@ module:
   imports:
     - path: github.com/imfing/hextra
 
+defaultContentLanguage: ru
+
 params:
   navbar:
     displayTitle: true
@@ -49,3 +51,4 @@ markup:
 services:
   googleAnalytics:
     ID: G-L8FLJF5S5R
+
