@@ -212,7 +212,7 @@ Destination  Gateway     Genmask        Flags Metric Ref Use Iface
 Второй участник звонка также должен использовать прокси.
 
 #### Как настроить работу Gemini?
-Включите предустановленный список `Google AI` и [проверьте](#kak-servisy-opredelyayut-ip-servera), как Google определяет страну вашего VPS-сервера. Если в результате проверки Gemini определяет страну для IPv6 не верно, в отличии от IPv4, то вы можете внести изменения в конфиг на сервере, используя данный [рецепт](/docs/server-side-recipes/#kak-ispolzovat-ipv4-tolko-dlya-gemini). Или [попробовать](/docs/server-side-recipes/#kak-napravit-opredelennyj-servis-v-warp) направить его в Warp.
+Включите предустановленный список `Google AI` и [проверьте](#kak-servisy-opredelyayut-ip-servera), как Google определяет страну вашего VPS-сервера. Если в результате проверки Gemini определяет страну для IPv6 не верно, в отличие от IPv4, то вы можете внести изменения в конфиг на сервере, используя данный [рецепт](/docs/server-side-recipes/#kak-ispolzovat-ipv4-tolko-dlya-gemini). Или [попробовать](/docs/server-side-recipes/#kak-napravit-opredelennyj-servis-v-warp) направить его в Warp.
 
 [В каких странах работает Gemini](https://support.google.com/gemini/answer/13575153?hl=ru)
 

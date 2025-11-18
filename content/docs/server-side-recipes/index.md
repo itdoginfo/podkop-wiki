@@ -89,7 +89,7 @@ toc: true
             {
             "type": "field",
             "domain": [
-                "geosite:google-deepmind",
+                "geosite:google-deepmind"
             ],
             "outboundTag": "direct_v4"
             }
@@ -137,8 +137,8 @@ warp-cli connect
             "protocol": "socks",
             "settings": {
                 "servers": [
-                    {"
-                        address": "127.0.0.1",
+                    {
+                        "address": "127.0.0.1",
                         "port": $WARP_PORT
                     }
                 ]
@@ -157,7 +157,7 @@ warp-cli connect
             {
                 "outboundTag": "warp",
                 "domain": [
-                    "geosite: google-deepmind" 
+                    "geosite:google-deepmind" 
                 ]
             }
         ]
