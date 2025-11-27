@@ -85,3 +85,7 @@ DoH нет на уровне систем iOS, MacOS и Linux. В Windows 11 DoH
 Во-вторых проверьте, что интерфейс получил в качестве DNS-сервера IP-адрес роутера.
 
 ![OS Interface router dns](images/interface-router.png)
+
+### SberTV
+
+Пользователь из чата обнаружил, что телевизор СберТВ обращается к 8.8.8.8 по 853 порту, что мешало нормальной работе `Podkop`. Решением проблемы стала блокировка обращения к DoH и порту 853 из локальной сети. Если у вас похожая проблема воспользуйтесь [документацией](https://openwrt.org/docs/guide-user/firewall/fw3_configurations/intercept_dns).
