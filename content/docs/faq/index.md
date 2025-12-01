@@ -212,12 +212,13 @@ Destination  Gateway     Genmask        Flags Metric Ref Use Iface
 Второй участник звонка также должен использовать прокси.
 
 #### Как настроить работу Gemini?
-Включите предустановленный список `Google AI` и проверьте при помощи [скрипта ipregion](https://github.com/vernette/ipregion), как Google определяет страну вашего VPS-сервера. 
+Включите предустановленный список `Google AI` и [проверьте](#kak-servisy-opredelyayut-ip-servera), как Google определяет страну вашего VPS-сервера. Если в результате проверки Gemini определяет страну для IPv6 не верно, в отличие от IPv4, то вы можете внести изменения в конфиг на сервере, используя данный [рецепт](/docs/server-side-recipes/#kak-ispolzovat-ipv4-tolko-dlya-gemini). Или [попробовать](/docs/server-side-recipes/#kak-napravit-opredelennyj-servis-v-warp) направить его в Warp.
+
 [В каких странах работает Gemini](https://support.google.com/gemini/answer/13575153?hl=ru)
 
 #### Как настроить работу ChatGPT?
-Сервисы OpenAI входят в предустановленные списки `Russia inside` и `Geoblock`. Если один из этих списков выбран, а сервис выдает ошибку `Unable to load site`, 
-проверьте при помощи [скрипта ipregion](https://github.com/vernette/ipregion), как OpenAI определяет страну вашего VPS-сервера.
+Сервисы OpenAI входят в предустановленные списки `Russia inside` и `Geoblock`. Если один из этих списков выбран, а сервис выдает ошибку `Unable to load site`, [проверьте](#kak-servisy-opredelyayut-ip-servera) как OpenAI определяет страну вашего VPS-сервера.
+
 [В каких странах работает ChatGPT](https://help.openai.com/en/articles/7947663-chatgpt-supported-countries)
 
 #### Как настроить несколько VLESS-ссылок для автоматического переключения?
@@ -254,8 +255,12 @@ Destination  Gateway     Genmask        Flags Metric Ref Use Iface
 4. Указать во вкладке **Настройки** `Podkop` в качестве **Source Network Interface** устройство, созданное в первом пункте. Если вы следовали инструкции это будет **br-guest**.
 5. Не забывайте нажимать **Save & Apply** после внесения настроек.
 
----
 
+## Как сервисы определяют ip сервера?
+Для того чтобы узнать как сервисы определяют страну вашего VPS-сервера воспользуйтесь скриптом [ipregion](https://github.com/vernette/ipregion).
+
+
+---
 \* Meta Platforms Inc. — организация, признанная экстремистской и запрещённая на территории РФ.
 
 \*\* WhatsApp принадлежит компании Meta Platforms Inc., признанной экстремистской организацией на территории РФ.
