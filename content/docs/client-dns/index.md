@@ -89,3 +89,22 @@ DoH нет на уровне систем iOS, MacOS и Linux. В Windows 11 DoH
 ### SberTV
 
 Пользователь из чата обнаружил, что телевизор СберТВ обращается к 8.8.8.8 по 853 порту, что мешало нормальной работе `Podkop`. Решением проблемы стала блокировка обращения к DoH и порту 853 из локальной сети. Если у вас похожая проблема воспользуйтесь [документацией](https://openwrt.org/docs/guide-user/firewall/fw3_configurations/intercept_dns).
+
+### Chromecast
+
+Пользователь столкнулся с тем, что устройство использует встроенные DNS-сервера от Google из-за чего трафик не попадает в Podkop. Проблему удалось решить через редирект DNS на уровне firewall.
+
+В файл /etc/config/firewall добавить следующее:
+
+```shell
+config redirect
+    option name 'Intercept DNS LAN'
+    option src 'lan'
+    option proto 'tcp udp'
+    option src_dport '53'
+    option dest_port '53'
+    option target 'DNAT'
+```
+и выполнить `service firewall restart`.
+
+После этого запросы проходят через dnsmasq роутера.
