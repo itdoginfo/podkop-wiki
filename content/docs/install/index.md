@@ -41,7 +41,7 @@ sh <(wget -O - https://raw.githubusercontent.com/itdoginfo/podkop/refs/heads/mai
 ## Установка на 25.12
 Вы можете установить podkop используя автоматический скрипт установки или загрузить необходимые файлы в формате **.apk** из [релизов](https://github.com/itdoginfo/podkop/releases) и выполнить установку вручную. 
 
-> [!WARN]
+> [!WARNING]
 > Не тестировалось. В случае возникновения проблем вы можете сообщить в [чат](/docs/troubleshooting/#pomosch-zala).
 
 ## Несовместимость
