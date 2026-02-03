@@ -13,6 +13,13 @@ sh <(wget -O - https://raw.githubusercontent.com/itdoginfo/podkop/refs/heads/mai
 ```
 Подробности в [Установка](/docs/install)
 
+#### APK поддерживается?
+Да, используйте команду автоматической установки
+```shell
+sh <(wget -O - https://raw.githubusercontent.com/itdoginfo/podkop/refs/heads/main/install.sh)
+```
+Подробности в [Установка](/docs/install/#ustanovka-na-25-12)
+
 #### Как правильно обновить `sing-box`?
 **Вариант 1: Обновление через скрипт `Podkop`**  
 [Скрипт для автоматической установки](/docs/install/#avtomaticheskaya-ustanovka-i-obnovlenie)
