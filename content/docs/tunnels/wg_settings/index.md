@@ -22,6 +22,10 @@ opkg update && opkg install wireguard-tools luci-proto-wireguard
 Для работы с Podkop нам не требуется создавать зону фаервола и настраивать перенаправление с lan. 
 Если вам нужно использовать на роутере Wireguard не только для Podkop то обратитесь к [статье](https://itdog.info/nastrojka-klienta-wireguard-na-openwrt/).
 
+## Использование с WARP
+
+Если туннель будет использоваться с WARP и списком подсетей **Cloudflare**, то дополнительно потребуется указать **Firewall Mark** в дополнительных настройках, как указано [здесь](/docs/faq/#kak-ispolzovat-warp-i-polzovatelskij-spisok-podsetej-cloudflare).
+
 ## Пример пользовательского файла конфигурации
 
 Клиентский файл конфигурации обычно имеет следующий вид:

@@ -62,6 +62,10 @@ opkg install kmod-amneziawg.ipk amneziawg-tools.ipk luci-proto-amneziawg.ipk (л
 > [!NOTE]
 > Скрипт включит перенаправление всего траффика через тунель AmneziaWG (установит в настройках Peer галочку Route Allowed IPs). Не забудьте снять галочку.
 
+## Использование с WARP
+
+Если туннель будет использоваться с WARP и списком подсетей **Cloudflare**, то дополнительно потребуется указать **Firewall Mark** в дополнительных настройках, как указано [здесь](/docs/faq/#kak-ispolzovat-warp-i-polzovatelskij-spisok-podsetej-cloudflare).
+
 ## Пример пользовательского файла конфигурации
 
 Клиентский файл конфигурации обычно имеет следующий вид:
