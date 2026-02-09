@@ -223,6 +223,35 @@ service podkop restart
 
 ![wg_firewall_mark](images/luci_wg_firewall_mark.png)
 
+#### Как отправить торренты в обход Podkop?
+Узнайте имя вашего физического WAN-интерфейса (например: wan, eth0, ppoe-wan) с помощью команды:
+```shell
+root@OpenWrt:~# route -n
+```
+```shell
+Kernel IP routing table
+Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+0.0.0.0         100.122.0.1     0.0.0.0         UG    0      0        0 wan
+```
+В первой строке и столбце **Iface** будет указано необходимое имя интерфейса.
+
+Создайте новую секцию в Podkop с типом подключения **VPN**.
+
+В качестве сетевого интерфейса впишите в поле **custom** название вашего физического WAN-интерфейса.
+![custom_network_interface](images/luci_custom_network_interface.png)
+Активируйте смешанный прокси и укажите свободный порт.
+![custom_network_interface](images/luci_mixed_proxy_port.png)
+Чтобы узнать, какие порты у вас используются в данный момент, воспользуйтесь следующей командой:
+```shell
+netstat -tanp | grep LISTEN
+```
+Не обращайте внимание на то, что рядом с интерфейсом будет указано **Absent Interface**.
+
+Откройте настройки вашего торрент-клиента и укажите адрес прокси, который состоит из адреса вашего роутера и порта, указанного в предыдущем шаге.
+
+Для примера, в qbittorent, настройка выглядит так:
+![qbittorrent_proxy_setting](images/qbittorrent_proxy_settings.png)
+
 ## Гостевая Wi-Fi сеть и `Podkop`
 
 ##### Как настроить гостевую Wi-Fi сеть, чтобы она **НЕ** использовала Podkop?
