@@ -15,9 +15,9 @@ toc: true
 | **Удалённые списки** | ✅ Есть, но с проблемами | ❌ | ✅ |
 | **Стабильность DNS** | ⚠️ Проблемы с отвалом | ❓ | ❓ |
 | **Missing interface при плохом WAN** | ⚠️ Есть проблема | ❓ | ❓ |
-| **XHTTP транспорт** | ❌ | ✅ | ❌ |
+| **XHTTP транспорт** | ❌ | ✅ | ✅ |
 | **OpenWrt packages** | ✅ | ✅ | ❌ |
-| **Failover/balancing** | ⚠️ URLTest | ✅ Fallback | ✅ Fallback и URLTest |
+| **Failover/balancing** | ⚠️ URLTest | ✅ Fallback и Balancer | ✅ Fallback и URLTest |
 | **Ошибка context deadline exceeded** | ⚠️ Есть проблема | ❓ | ❓ |
 | **Документация** | Пойдёт | Много depricated, которые не обозначены. Но пойдёт | Плохая |
 
