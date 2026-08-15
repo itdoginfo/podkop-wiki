@@ -16,8 +16,8 @@ https://downloads.openwrt.org/releases/24.10.2/targets/x86/64/
 
 ```
 wget https://downloads.openwrt.org/releases/24.10.2/targets/x86/64/openwrt-sdk-24.10.2-x86-64_gcc-13.3.0_musl.Linux-x86_64.tar.zst
-tar xf openwrt-sdk-23.05.5-x86-64_gcc-12.3.0_musl.Linux-x86_64.tar.xz
-mv openwrt-sdk-23.05.5-x86-64_gcc-12.3.0_musl.Linux-x86_64 SDK
+tar xf openwrt-sdk-24.10.2-x86-64_gcc-13.3.0_musl.Linux-x86_64.tar.zst
+mv openwrt-sdk-24.10.2-x86-64_gcc-13.3.0_musl.Linux-x86_64 SDK
 ```
 Последнее делается для удобства.
 
