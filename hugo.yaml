@@ -1,5 +1,5 @@
 baseURL: https://podkop.net/
-languageCode: ru-ru
+locale: ru-ru
 title: Podkop
 
 module:
@@ -51,4 +51,3 @@ markup:
 services:
   googleAnalytics:
     ID: G-L8FLJF5S5R
-

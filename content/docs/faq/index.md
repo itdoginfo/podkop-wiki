@@ -159,7 +159,7 @@ sysctl -p
 
 Чтобы направить весь трафик одного устройства через туннель:
 - назначьте этому устройству [статический IP](https://openwrt.org/docs/guide-user/luci/static_ip)
-- в настройках `Podkop` добавьте IP-адрес устройства в [список для полного перенаправления](/docs/sections/#polnostyu-marshrutiziruemye-ip-adresa-ip-for-full-redirection)
+- в настройках `Podkop` добавьте IP-адрес устройства в [список для полного перенаправления](/docs/sections/#polnostyu-marshrutiziruemye-ip-adresa-fully-routed-ips)
 
 Назначение `Podkop` -- "точечная" маршрутизация трафика, поэтому в web-интерфейсе отправка **всех устройств** в туннель не настраивается.  
 
@@ -181,7 +181,7 @@ service podkop restart
 > Подробное описание смотрите в статье [Секции](/docs/sections/)
 
 #### Как исключить определенное устройство из туннеля?
-Используйте опцию [Исключенные из маршрутизации IP-адреса | IP for exclusion](/docs/settings/#isklyuchennye-iz-marshrutizacii-ip-adresa-ip-for-exclusion).
+Используйте опцию [Исключенные из маршрутизации IP-адреса | IP for exclusion](/docs/settings/#isklyuchennye-iz-marshrutizacii-ip-adresa-routing-excluded-ips).
 
 #### Как заставить работать звонки в Telegram, WhatsApp и Discord?
 Добавьте в настройки секции предустановленные списки Telegram, Meta* (для WhatsApp**) и Discord. 

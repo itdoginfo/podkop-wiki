@@ -90,7 +90,7 @@ config section 'wg'
 
     Адрес, который использует `sing-box` для тестирования соединения для указанных вами ссылок.
 
-    Вы можете вручную выбрать прокси, используя [dashboard](/docs/dashboard) или [yacd](/docs/yacd#ручное-переключение-прокси).
+    Вы можете вручную выбрать прокси, используя [dashboard](/docs/dashboard) или [yacd](/docs/yacd/#ruchnoe-pereklyuchenie-proksi).
 
 - **Конфигурация Outbound | Outbound Config**
 

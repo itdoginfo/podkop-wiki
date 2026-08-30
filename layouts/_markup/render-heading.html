@@ -1,0 +1,14 @@
+{{/* Responsible for generating anchors within the article */}}
+{{/* original file: https://github.com/imfing/hextra/blob/v0.12.3/layouts/_markup/render-heading.html */}}
+{{/* For transliteration, line 5 has been added, and changes have been made to line 10,11." */}}
+
+{{- $customAnchor := partial "transliterate.html" .PlainText -}}
+
+<h{{ .Level }} {{- with .Attributes.class }} class="{{ . }}" {{- end }}>
+  {{- .Text | safeHTML -}}
+  {{- if gt .Level 1 -}}
+    <span class="hx:absolute hx:-mt-20" id="{{ $customAnchor }}"></span>
+    <a href="#{{ $customAnchor }}" class="subheading-anchor" aria-label="{{ (T "permalinkLabel") | default "Permalink for this section" }}"></a>
+  {{- end -}}
+</h{{ .Level }}>
+{{- /* Drop trailing newlines */ -}}
