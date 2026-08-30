@@ -30,7 +30,7 @@ sh <(wget -O - https://raw.githubusercontent.com/itdoginfo/podkop/refs/heads/mai
 Если с роутера недоступны `github.com`, `raw.githubusercontent.com` или `downloads.openwrt.org`, поставить podkop можно через зеркало:
 
 ```
-wget -O - https://podkop.215216777.xyz/urjw/scripts/bootstrap.sh | sh
+wget -O - https://mirror.podkop.net/urjw/scripts/bootstrap.sh | sh
 ```
 
 Скрипт сам определяет версию и архитектуру OpenWrt, скачивает собранный под неё набор пакетов вместе со всеми зависимостями и ставит его локально. Каждый файл проверяется по sha256. Уже установленные зависимости пропускаются, так что система целиком не обновляется.
@@ -45,7 +45,7 @@ wget -O - https://podkop.215216777.xyz/urjw/scripts/bootstrap.sh | sh
 Когда `wget` ругается на сертификат — обычное дело на свежей прошивке, где ещё не выставлено время, — добавьте `--no-check-certificate`:
 
 ```
-wget --no-check-certificate -O - https://podkop.215216777.xyz/urjw/scripts/bootstrap.sh | sh
+wget --no-check-certificate -O - https://mirror.podkop.net/urjw/scripts/bootstrap.sh | sh
 ```
 
 ## Ручная установка из пакетов
