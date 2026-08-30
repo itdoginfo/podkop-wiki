@@ -80,7 +80,7 @@
   {{- range $headings }}
     {{- if .Title }}
 
-    {{- $transliteratedId := partial "transliterate.html" (.Title | plainify) -}}
+    {{- $transliteratedId := partial "transliterate.html" (.Title | plainify | htmlUnescape) -}}
 
       <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
         <a class="{{ $class }} hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#{{ $transliteratedId }}">

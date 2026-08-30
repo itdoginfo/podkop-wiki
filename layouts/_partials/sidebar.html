@@ -260,7 +260,7 @@
         {{- with .Headings }}
           {{- range . -}}
 
-          {{- $transliteratedId := partial "transliterate.html" (.Title | plainify) -}}
+          {{- $transliteratedId := partial "transliterate.html" (.Title | plainify | htmlUnescape) -}}
 
             <li>
               <a

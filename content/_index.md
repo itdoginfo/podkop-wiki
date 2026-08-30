@@ -8,7 +8,7 @@ layout: hextra-home
       <div class="hx:absolute hx:-bottom-40 hx:-left-40 hx:w-[520px] hx:h-[520px] hx:rounded-full hx:bg-muted/40 hx:blur-[140px]"></div>
   </div>
   <div class="hx:relative hx:z-10 hx:max-w-2xl hx:px-6">
-      <h1 class="hx:text-4xl sm:hx:text-4xl md:hx:text-5xl hx:font-extrabold hx:mb-4 hx:flex hx:items-center hx:justify-center hx:gap-2">
+      <h1 class="hx:text-4xl hx:sm:text-4xl hx:md:text-5xl hx:font-extrabold hx:mb-4 hx:flex hx:items-center hx:justify-center hx:gap-2">
           Podkop
           {{< badge content="Beta" color="orange" >}}
       </h1>
@@ -21,7 +21,7 @@ layout: hextra-home
       </p>
       <a
         href="/docs/install/"
-        class="main-cta-button hx:inline-flex hx:items-center hx:justify-center hx:gap-2 hx:text-base hx:font-semibold hx:rounded-xl hx:px-6 hx:py-3 hx:text-center hx:transition-colors hover:hx:brightness-95 focus:hx:outline-none focus:hx:ring-2 hx:ring-gray-300"
+        class="main-cta-button hx:inline-flex hx:items-center hx:justify-center hx:gap-2 hx:text-base hx:font-semibold hx:rounded-xl hx:px-6 hx:py-3 hx:text-center hx:transition-colors hx:hover:brightness-95 hx:focus:outline-none hx:focus:ring-2 hx:ring-gray-300"
       >
       Установить Podkop
       <svg
@@ -44,7 +44,7 @@ layout: hextra-home
 
 <section class="hx:py-16 hx:w-full hx:mt-16">
   <div class="hx:w-full">
-    <h2 class="hx:text-2xl sm:hx:text-3xl md:hx:text-4xl hx:font-bold hx:mb-10 hx:text-center">Популярные статьи</h2>
+    <h2 class="hx:text-2xl hx:sm:text-3xl hx:md:text-4xl hx:font-bold hx:mb-10 hx:text-center">Популярные статьи</h2>
     {{< cards cols="2" >}}
       {{< card link="/docs/settings/" title="Настройки" icon="cog" >}}
       {{< card link="/docs/troubleshooting/" title="Поиск и устранение неисправностей" icon="clipboard-list" >}}
